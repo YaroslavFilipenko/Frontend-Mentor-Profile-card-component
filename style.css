@@ -9,37 +9,19 @@ body {
     font-weight: 400;
     font-size: 16px;
     color: hsl(227, 10%, 46%);
+    background-color: hsl(185, 75%, 39%);
+    background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+    background-position: right 50vw bottom 40vh, left 50vw top 50vh;
+    background-repeat: no-repeat, no-repeat;
 }
 
 .main {
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
     width: 100vw;
     min-height: 100vh;
-    background: hsl(185, 75%, 39%);
     overflow: hidden;
-}
-
-.main::before {
-    content: '';
-    position: absolute;
-    background: url(images/bg-pattern-top.svg) no-repeat;
-    width: 980px;
-    height: 980px;
-    top: -50%;
-    left: -250px;
-}
-
-.main::after {
-    content: '';
-    position: absolute;
-    background: url(images/bg-pattern-bottom.svg) no-repeat;
-    width: 978px;
-    height: 978px;
-    top: 50%;
-    right: -200px;
 }
 
 .card {
